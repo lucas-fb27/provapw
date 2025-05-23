@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Voluntários</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Voluntários</div>
+            <div class="nav-links">
+                <a href="/index.html" class="nav-link">Cadastro de Voluntário</a>
+                <a href="/pages/volunteers.html" class="nav-link" id="volunteers-link">Lista de Voluntários</a>
+                <a href="/pages/login.html" class="nav-link" id="login-link">Entrar</a>
+                <button class="nav-link hidden" id="logout-btn">Sair</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h1>Cadastro de Voluntário</h1>
+            
+            <form id="register-form" class="form">
+                <div class="form-group">
+                    <label for="name">Nome Completo*</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cep">CEP*</label>
+                        <input type="text" id="cep" maxlength="9" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="street">Rua*</label>
+                        <input type="text" id="street" required>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="number">Número*</label>
+                        <input type="text" id="number" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="complement">Complemento</label>
+                        <input type="text" id="complement">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="neighborhood">Bairro*</label>
+                        <input type="text" id="neighborhood" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">Cidade*</label>
+                        <input type="text" id="city" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">Estado*</label>
+                        <input type="text" id="state" maxlength="2" required>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Senha*</label>
+                        <input type="password" id="password" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar Senha*</label>
+                        <input type="password" id="confirm-password" required>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="/js/auth.js"></script>
+    <script src="/js/register.js"></script>
+</body>
+</html>

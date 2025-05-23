@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Voluntários</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Voluntários</div>
+            <div class="nav-links">
+                <a href="/index.html" class="nav-link">Cadastro de Voluntário</a>
+                <a href="/pages/volunteers.html" class="nav-link active" id="volunteers-link">Lista de Voluntários</a>
+                <a href="/pages/login.html" class="nav-link" id="login-link">Entrar</a>
+                <button class="nav-link hidden" id="logout-btn">Sair</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="volunteers-header">
+            <h1>Lista de Voluntários</h1>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Buscar voluntários..." class="search-input">
+            </div>
+            <button id="clear-all-volunteers-btn" class="btn btn-danger">Limpar Tudo</button> 
+        </div>
+
+        <div id="volunteers-grid" class="volunteers-grid">
+            </div>
+    </main>
+
+    <script src="/js/auth.js"></script>
+    <script src="/js/volunteers.js"></script>
+</body>
+</html>
